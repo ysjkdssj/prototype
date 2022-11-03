@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Markcss/style.css">
+    <title>양영 배달 서비스 홈페이지</title>
+</head>
+
+<body>
+
+    <div id="modal">
+        <form class="modal-container">
+            <div id="close">X</div>
+            <h2>임시 삼품명</h2>
+            <div id="cnt">
+                <div>수량</div>
+                <input type="number">
+            </div>
+            <div id="total">가격 : 1000</div>
+            <divutton class="basket_btn" data-name="">장바구니</buttodiv>
+        </form>
+    </div>
+
+    <header>
+        <div id="logo">YYDHSW-Delivery</div>
+        <button onclick="location.href='./log/login.html'">로그인</button> <br>
+        <button onclick="location.href='./log/login.html'">로그인</button> <br>
+    </header>
+    <!-- 삼각김밥 리스트-->
+    <div class="container">
+        <div class="title">
+            상품 리스트
+        </div>
+        <div id="goods-list">
+            <div class="detail">
+                <img src="./image/1000024971696_i1_1200.jpg" alt="" class="img-test">
+                <div class="goods-info">
+                    <div>삼각김밥</div>
+                    <div href="html/buy.html?name='사각'" class="basket_btn" data-name="삼각김밥">장바구니</div>
+                </div>
+            </div>
+            <!-- 감자칩 리스트-->
+            <div class="detail">
+                <img src="./image/image_5822816071507619115954.jpg" alt="" class="img-test">
+                <div class="goods-info">
+                    <div>감자칩</div>
+                    <div href="#" class="basket_btn" data-name="감자칩">장바구니</div>
+                </div>
+            </div>
+            <div class="detail">
+                <img src="./image/sayida.jpg" alt="" class="img-test">
+                <div class="goods-info">
+                    <div>음료수</div>
+                    <div href="drink.html" class="basket_btn" data-name="음료수">장바구니</div>
+                </div>
+            </div>
+            
+            <div class="detail">
+                <img src="./image/다운로드.jpg" alt="" class="img-test">
+                <div class="goods-info">
+                    <div>제과 제빵</div>
+                    <div href="#" class="basket_btn" data-name="제과 제빵">장바구니</div>
+                </div>
+            </div>
+            <div class="detail">
+                <img src="./image/캡처.PNG" alt="" class="img-test">
+                <div class="goods-info">
+                    <div>초콜릿, 젤리</div>
+                    <div href="#" class="basket_btn" data-name="초콜릿, 젤리">장바구니</div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    </div>
+
+    <script src="./js/jquery-3.1.1.min.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

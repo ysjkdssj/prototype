@@ -1,0 +1,30 @@
+*{}
+    .myasfh{
+        width: 300px;
+        height: 200px;
+   
+        color: white;
+        text-align: center;
+    
+        background-image: url('/image/1000024971696_i1_1200.jpg');
+        background-size: cover;
+        background-position: center;
+    
+        border-radius: 10px;
+
+        padding-top: 20px;
+    }
+
+
+   .mybtn {
+        background-color: brown;
+    
+        width: 300px;
+        height: 50px;
+
+        border-radius: 10px;
+
+        color: white;
+    }
+
+    .text-align { text-align: center; }
