@@ -1,0 +1,67 @@
+/* 제약 조건 */
+NOT NULL (NN) _ NULL 값 허용 X
+UNIQUE KEY (UK) _ 같은 값 허용 X
+PRIMARY KEY (PK) _ NN + UK
+FORELGN KEY (FK) _ 외래키 (다른 테이블에서 값 받아오기)
+CHECK (CK) _ 값 길이 제약 ㄱㄴ
+ROLLBACK _ 되돌리기
+COMMIT _ 저장?
+
+/* 외래키 */
+CONSTRAINT 제약조건 이름  FOREINGN KEY ( 받을 컬럼 명 )
+REFERENCES 가져올 테이블(가져올 컬럼 명)
+
+EX ) 
+CONSTRAINT 제약조건 이름  FOREINGN KEY (DEPARTMENT_ID)
+REFERENCES DEPARTMENTS(DEPARTMENT_ID)
+
+/* 서브쿼리 이용 INSERT */
+INSERT INTO COPY_테이블 명(컬럼명)
+SELECT 문
+
+EX )
+INSERT into copy Departments(department_id, department_name, manager_id)
+SELECT  department_id, department_name, manager_id
+from departments
+where department_name = 'IT Support';
+
+/* 서브쿼리 이용 UPDATE */
+UPDATE 테이블
+SET 컬럼 = ( INSERT 문 )
+
+EX )
+UPDATE EMPLOYEES 
+SET JOB_ID = ( SELECT JOB_ID FROM EMPLOYEES WHERE EMPLOYEE_ID = 205),
+SALARY = (SELECT SALART FROM EMPLOYEES WHERE EMPLOYEE_ID = 205)
+WHERE EMPLOYEE_ID = 114;
+
+/* 서브쿼리 이용 DELETE */
+DELETE FROM 테이블
+WHERE 컬럼 = (SELECT 문장);
+
+EX )
+DELETE FROM COPY_DEPARTMENTS
+WHERE DEPARTMENT_ID = (SELECT DEPARTMENT_ID FROM EMPLOYEES WHERE FIRST_NAME = 'Bruce');
+
+/* 테이블 복사_스키마 */
+CREATE TABLE 테이블명 AS
+SELECT 문
+
+EX )
+create table  copy_departments as
+SELECT * FROM departments
+where 1=2;
+
+/* 제약조건 */
+컬럼 데이터_타입 제약조건(CONSTRAINT 테이블명_컬럼명_제약)
+
+EX ) 
+ENO NUMBER(6) CONSTRAINT EMP_ENO_PK
+
+/* 제약 조건 추가 */ 
+ALTER TABLE 테이블
+ADD CONSTRAINT 제약조건 이름 CONSTRAINT_TYPE(컬럼);
+
+EX )
+ALTER TABLE CLASS
+ADD CONSTRAINT CLASS_CON_PK PRIMARY KEY (CNO);
