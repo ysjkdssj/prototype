@@ -1,91 +1,155 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>SH Delivery</title>
-        <!-- css  -->
-        <link rel="stylesheet" href="/css/subMenu.css/sub.css">
-        <!-- js  -->
-        <script src="/js/jquery-3.1.1.min.js"></script>
-    </head>
-    
-    <body>
-        <header>
-            <div class="background">
-                <a href="/main.html"><img src="/images/logo.png" alt="SH Delivery" id="logo-img"></a></h1>
-                <nav>
-                    <ul>
-                        <li class="mainMenu">
-                            <a href="#">로그인</a>
-                            <ul class="subMenu">
-                                <li><a href="#">로그인</a></li>
-                                <li><a href="#">회원가입</a></li>
-                                <li><a href="#">로그아웃</a></li>
-                            </ul>
-                        </li>
-                        <li class="mainMenu">
-                            <a href="#">음료수</a>
-                            <ul class="subMenu">
-                                <li><a href="/html/order.html">탄산음료</a></li>
-                                <li><a href="#">2L 음료</a></li>
-                                <li><a href="#">커피, 티</a></li>
-                                <li><a href="#">비주류 음료</a></li>
-                            </ul>
-                        </li>
-                        <li class="mainMenu">
-                            <a href="#">제과제빵</a>
-                            <ul class="subMenu">
-                                <li><a href="#">과자</a></li>
-                                <li><a href="#">빵</a></li>
-                                <li><a href="#">빙과류</a></li>
-                            </ul>
-                        </li>
-                        <li class="mainMenu">
-                            <a href="#">캔디류</a>
-                            <ul class="subMenu">
-                                <li><a href="#">사탕</a></li>
-                                <li><a href="#">젤리</a></li>
-                                <li><a href="#">초콜릿</a></li>
-                            </ul>
-                        </li>
-                        <li class="mainMenu">
-                            <a href="#">식사류</a>
-                            <ul class="subMenu">
-                                <li><a href="#">라면</a></li>
-                                <li><a href="#">김밥</a></li>
-                                <li><a href="#">핫바류</a></li>
-                                <li><a href="#">도시락</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SH Delivery</title>
+    <!-- css  -->
+    <link rel="stylesheet" href="/css/subMenu.css/sub.css">
+    <!-- js  -->
+    <script src="/js/jquery-3.1.1.min.js"></script>
+    <!-- 아이콘 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="background">
+            <a href="/main.html"><img src="/images/logo.png" alt="SH Delivery" id="logo-img"></a></h1>
+            <nav>
+                <ul>
+                    <li class="mainMenu">
+                        <a href="#">로그인</a>
+                        <ul class="subMenu">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">로그아웃</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainMenu">
+                        <a href="#">음료수</a>
+                        <ul class="subMenu">
+                            <li><a href="/html/order.html">탄산음료</a></li>
+                            <li><a href="#">2L 음료</a></li>
+                            <li><a href="#">커피, 티</a></li>
+                            <li><a href="#">비주류 음료</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainMenu">
+                        <a href="#">제과제빵</a>
+                        <ul class="subMenu">
+                            <li><a href="#">과자</a></li>
+                            <li><a href="#">빵</a></li>
+                            <li><a href="#">빙과류</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainMenu">
+                        <a href="#">캔디류</a>
+                        <ul class="subMenu">
+                            <li><a href="#">사탕</a></li>
+                            <li><a href="#">젤리</a></li>
+                            <li><a href="#">초콜릿</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainMenu">
+                        <a href="#">식사류</a>
+                        <ul class="subMenu">
+                            <li><a href="#">라면</a></li>
+                            <li><a href="#">김밥</a></li>
+                            <li><a href="#">핫바류</a></li>
+                            <li><a href="#">도시락</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 주문 조정 -->
+    <div id="oner">
+        <form class="oner-container">
+            <div id="close"><i class="fa-solid fa-xmark"></i></div>
+            <h2>임시 삼품명</h2>
+            <div id="cnt">
+                <div>수량</div>
+                <input type="number">
             </div>
-        </header>
-    
-        <div class="slide">
-            <img src="/images/Moms.jpg" alt="슬라이드이미지1">
-            <img src="/images/img2.jpg" alt="슬라이드이미지2">
-            <img src="/images/pp.jpg" alt="슬라이드이미지3">
+            <div id="total">가격 : 1000</div>
+            <div class="basket_btn" data-name="">장바구니</div>
+        </form>
+    </div>
+
+    <!-- 선택창-->
+    <div class="container">
+        <div class="title">
+            상품 리스트
+        </div>
+        <div id="goods-list">
+            <div class="detail">
+                <img src="./image/1000024971696_i1_1200.jpg" alt="" class="img-test">
+                <div class="goods-info">
+                    <div>삼각김밥</div>
+                    <div href="html/buy.html?name='사각'" class="basket_btn" data-name="삼각김밥">장바구니</div>
+                </div>
+            </div>
+            <!-- 상품 목록-->
+            <div class="detail">
+                <img src="./image/image_5822816071507619115954.jpg" alt="" class="img-test">
+                <div class="goods-info">
+                    <div>콜라</div>
+                    <div href="#" class="basket_btn" data-name="감자칩">장바구니</div>
+                </div>
+            </div>
+            
+            <div class="detail">
+                <img src="./image/sayida.jpg" alt="" class="img-test">
+                <div class="goods-info">
+                    <div>사이다</div>
+                    <div href="drink.html" class="basket_btn" data-name="음료수">장바구니</div>
+                </div>
+            </div>
+
+            <div class="detail">
+                <img src="./image/다운로드.jpg" alt="" class="img-test">
+                <div class="goods-info">
+                    <div>환타</div>
+                    <div href="#" class="basket_btn" data-name="제과 제빵">장바구니</div>
+                </div>
+            </div>
+            
+            <div class="detail">
+                <img src="./image/캡처.PNG" alt="" class="img-test">
+                <div class="goods-info">
+                    <div>탄산수</div>
+                    <div href="#" class="basket_btn" data-name="초콜릿, 젤리">장바구니</div>
+                </div>
+            </div>
+
         </div>
 
-        <footer>
-            <div class="background">
-                <a href="#" class="footerLogo">
-                    <img src="./images/logo.png" alt="대부분은 버그입니다." class="logo-img2">
-                </a>
-                <p>copyright&copy; All rights reserved SH Delivery </p>
-                <ul class="sns">
-                    <li><a href="#"><img src="./images/sns1.jpg" alt="sns이미지1"></a></li>
-                    <li><a href="#"><img src="./images/sns2.jpg" alt="sns이미지2"></a></li>
-                    <li><a href="https://open.kakao.com/o/sEZq8moc"><img src="./images/sns3.jpg" alt="sns이미지3"></a></li>
-                </ul>
-            </div>
-        </footer>
-    
-        <script src="./js/main.js"></script>
 
-    </body>
-    
-    </html>
+    </div>
+    </div>
+
+    <footer>
+        <div class="background">
+            <a href="#" class="footerLogo">
+                <img src="/images/logo.png" alt="대부분은 버그입니다." class="logo-img2">
+            </a>
+            <p>copyright&copy; All rights reserved SH Delivery </p>
+            <ul class="sns">
+                <li><a href="#"><img src="/images/sns1.jpg" alt="sns이미지1"></a></li>
+                <li><a href="#"><img src="/images/sns2.jpg" alt="sns이미지2"></a></li>
+                <li><a href="https://open.kakao.com/o/sEZq8moc"><img src="/images/sns3.jpg" alt="sns이미지3"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/oner.js"></script>
+
+</body>
+
+</html>
