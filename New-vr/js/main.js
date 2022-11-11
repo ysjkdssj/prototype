@@ -7,7 +7,7 @@ $(".mainMenu").hover(
     }
 );
 
-var slide = $(".slide > a");
+var slide = $(".slide > img");
 var sno = 0;
 var eno = slide.length - 1;
 var timer = setInterval("autoslide()", 3000); // 3초마다 모션함수 실행

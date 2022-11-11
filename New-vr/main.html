@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SH Delivery</title>
-    <!-- css  -->
-    <link rel="stylesheet" href="./css/main.css">
-    <!-- js  -->
-    <script src="./js/jquery-3.1.1.min.js"></script>
-
-    <style>
-        .container {
-            width: 1280px;
-            margin: auto;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <div class="container">
-            
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SH Delivery</title>
+        <!-- css  -->
+        <link rel="stylesheet" href="./css/main/main.css">
+        <!-- js  -->
+        <script src="./js/jquery-3.1.1.min.js"></script>
+    </head>
+    
+    <body>
+        <header>
             <div class="background">
                 <a href="/main.html"><img src="./images/logo.png" alt="SH Delivery" id="logo-img"></a></h1>
                 <nav>
                     <ul>
                         <li class="mainMenu">
-                            <a href="#">마이페이지</a>
+                            <a href="#">로그인</a>
                             <ul class="subMenu">
-                                <li><a href="#">구매내역</a></li>
-                                <li><a href="#">환불내역</a></li>
-                                <li><a href="#">배송조회</a></li>
-                                <li><a href="#">마이프로필</a></li>
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">로그아웃</a></li>
                             </ul>
                         </li>
                         <li class="mainMenu">
@@ -41,10 +30,8 @@
                             <ul class="subMenu">
                                 <li><a href="./html/order.html">탄산음료</a></li>
                                 <li><a href="#">2L 음료</a></li>
-
-                                <li><a href="#">티</a></li>
+                                <li><a href="#">커피, 티</a></li>
                                 <li><a href="#">비주류 음료</a></li>
-                                <li><a href="#">커피</a></li>
                             </ul>
                         </li>
                         <li class="mainMenu">
@@ -52,8 +39,6 @@
                             <ul class="subMenu">
                                 <li><a href="#">과자</a></li>
                                 <li><a href="#">빵</a></li>
-                                <li><a href="#">약과</a></li>
-                                <li><a href="#">케이크</a></li>
                                 <li><a href="#">빙과류</a></li>
                             </ul>
                         </li>
@@ -62,8 +47,6 @@
                             <ul class="subMenu">
                                 <li><a href="#">사탕</a></li>
                                 <li><a href="#">젤리</a></li>
-                                <li><a href="#">달고나</a></li>
-                                <li><a href="#">츄잉껌</a></li>
                                 <li><a href="#">초콜릿</a></li>
                             </ul>
                         </li>
@@ -71,7 +54,6 @@
                             <a href="#">식사류</a>
                             <ul class="subMenu">
                                 <li><a href="#">라면</a></li>
-                                <li><a href="#">삼각김밥</a></li>
                                 <li><a href="#">김밥</a></li>
                                 <li><a href="#">핫바류</a></li>
                                 <li><a href="#">도시락</a></li>
@@ -80,31 +62,30 @@
                     </ul>
                 </nav>
             </div>
+        </header>
+    
+        <div class="slide">
+            <img src="./images/Moms.jpg" alt="슬라이드이미지1">
+            <img src="./images/img2.jpg" alt="슬라이드이미지2">
+            <img src="./images/pp.jpg" alt="슬라이드이미지3">
         </div>
-    </header>
 
-    <div class="slide">
-        <div class="container">
-            <a href="https://momstouch.co.kr/"><img src="./images/Moms.jpg" alt="슬라이드이미지1"></a>
-            <a href="https://momstouch.co.kr/"><img src="./images/img2.jpg" alt="슬라이드이미지2"></a>
-            <a href="https://momstouch.co.kr/"><img src="./images/img3.jpg" alt="슬라이드이미지3"></a>
-        </div>
-    </div>
+        <footer>
+            <div class="background">
+                <a href="#" class="footerLogo">
+                    <img src="./images/logo.png" alt="대부분은 버그입니다." class="logo-img2">
+                </a>
+                <p>copyright&copy; All rights reserved SH Delivery </p>
+                <ul class="sns">
+                    <li><a href="#"><img src="./images/sns1.jpg" alt="sns이미지1"></a></li>
+                    <li><a href="#"><img src="./images/sns2.jpg" alt="sns이미지2"></a></li>
+                    <li><a href="https://open.kakao.com/o/sEZq8moc"><img src="./images/sns3.jpg" alt="sns이미지3"></a></li>
+                </ul>
+            </div>
+        </footer>
+    
+        <script src="./js/main.js"></script>
 
-    <footer>
-        <div class="background">
-            <a href="#" class="footerLogo">SH Delivery<img src="/images/logo.jpg" alt="대부분은 버그입니다." id="logo-img"></a>
-            <p>copyright&copy; All rights reserved SH Delivery </p>
-            <ul class="sns">
-                <li><a href="#"><img src="./images/sns1.jpg" alt="sns이미지1"></a></li>
-                <li><a href="#"><img src="./images/sns2.jpg" alt="sns이미지2"></a></li>
-                <li><a href="https://open.kakao.com/o/sEZq8moc"><img src="./images/sns4.jpg" alt="sns이미지1"></a></li>
-            </ul>
-        </div>
-    </footer>
-
-    <script src="./js/main.js"></script>
-
-</body>
-
-</html>
+    </body>
+    
+    </html>
